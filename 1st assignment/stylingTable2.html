@@ -1,0 +1,53 @@
+<!--SECTION: Introduction to CSS
+    QUESTION: Styling table with CSS properties-->
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+        <title>19th Century French Paintings</title>
+        <style>
+        table {
+            border: solid 1pt black;
+            border-spacing: 10pt;
+            }
+            td {
+            border: solid 1pt black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+        <caption>19th Century French Paintings</caption>
+        <col class="artistName" />
+        <colgroup id="paintingColumns">
+            <col />
+            <col />
+        </colgroup>
+        <thead>
+            <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Year</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+            <td colspan="2">Total Number of Paintings</td>
+            <td>2</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+            <td>The Death of Marat</td>
+            <td>Jacques-Louis David</td>
+            <td>1793</td>
+            </tr>
+            <tr>
+            <td>Burial at Ornans</td>
+            <td>Gustave Courbet</td>
+            <td>1849</td>
+            </tr>
+        </tbody>
+        </table>
+    </body>
+</html>
