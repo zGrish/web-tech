@@ -1,0 +1,23 @@
+<!--QUESTION 4: HTML code to demonstrate inline JavaScript using a Conditional Statement-->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Greeting based on the Hour of the Day</h1>
+    <p id="greetingMessage"></p>
+    <script type="text/javascript">
+        var hourOfDay = new Date().getHours(); 
+        var greeting; 
+
+        if (hourOfDay > 4 && hourOfDay < 12) {
+            greeting = "Good Morning";
+        } else if (hourOfDay >= 12 && hourOfDay < 20) {
+            greeting = "Good Afternoon";
+        } else {
+            greeting = "Good Evening";
+        }
+        document.getElementById("greetingMessage").innerText = greeting;
+    </script>
+</body>
+</html>
