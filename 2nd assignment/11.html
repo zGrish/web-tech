@@ -1,0 +1,28 @@
+<!--QUESTION 11: HTML Document demonstrating Specificity-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Share Your Travels</title>
+        <link rel="stylesheet" href="11.css"/>
+    </head>
+    <body>
+        This text is not within a p element.
+        <p>Reviews</p>
+        <div>
+            <p>By Ricardo on <time>September 15, 2015</time></p>
+            <p>Easy on the HDR buddy.</p>
+            This text is not within a p element.
+        </div>
+        <hr/>
+        <div>
+            <p>By Susan on <time>October 1, 2015</time></p>
+            <p>I love Central Park.</p>
+        </div>
+        <hr/>
+        <div>
+            <p class="last">By Dave on <time>October 15, 2015</time></p>
+            <p class="last" id="verylast">Thanks for posting.</p>
+        </div>
+        <hr/>
+        </body>
+</html>

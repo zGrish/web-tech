@@ -1,0 +1,41 @@
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$base-padding: 10px;
+
+@mixin box-style($background-color, $border-color) {
+  border: 1px solid $border-color;
+  background-color: $background-color;
+  padding: $base-padding;
+  margin: $base-padding / 2;
+}
+
+.box {
+  @include box-style($primary-color, darken($primary-color, 10%));
+  color: white;
+}
+
+.alert {
+  @include box-style($secondary-color, darken($secondary-color, 10%));
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+.content {
+    background-color: #ecf0f1;
+    padding: $base-padding * 2;
+    margin-top: $base-padding;
+    
+    a {
+      color: $primary-color;
+      text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

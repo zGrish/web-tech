@@ -1,0 +1,24 @@
+<!--QUESTION 29: HTML Document demonstrating limitations of Paragraph properties
+    Complications in calculating percents and em units-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { font-size: 100%; }
+            p { font-size: 1em; }
+            h1 { font-size: 2em; }       
+        </style>
+    </head>
+    <body>
+        <p>this is 16 pixels</p>
+        <h1>this is 32 pixels</h1>
+        <article>
+            <h1>this is 32 pixels</h1>
+            <p>this is 16 pixels</p>
+            <div>
+                <h1>this is 32 pixels</h1>
+                <p>this is 16 pixels</p>
+            </div>
+        </article>
+    </body>
+</html>

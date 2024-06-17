@@ -1,0 +1,29 @@
+<!--QUESTION 30: HTML Document demonstrating limitations
+    of Paragraph properties: Using rem units-->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                body { font-size: 100%; }
+                p {
+                    font-size: 16px;
+                    font-size: 1rem;
+                }
+                h1 { font-size: 2em; }
+                article { font-size: 75% }
+                div { font-size: 75% }     
+            </style>
+        </head>
+        <body>
+            <p>this is 16 pixels</p>
+            <h1>this is 32 pixels</h1>
+            <article>
+                <h1>this is 32 pixels</h1>
+                <p>this is 16 pixels</p>
+                <div>
+                    <h1>this is 32 pixels</h1>
+                    <p>this is 16 pixels</p>
+                </div>
+            </article>
+        </body>
+    </html>

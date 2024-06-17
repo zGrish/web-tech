@@ -1,0 +1,54 @@
+<!--QUESTION 8: HTML Sample Document demonstrating Contextual Selectors-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Share Your Travels</title>
+        <style>
+            a:link {
+                text-decoration: underline;
+                color: blue;
+            }
+            a:visited {
+                text-decoration: underline;
+                color: purple;
+            }
+            a:hover {
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:active {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Links are an important part of any web page. To learn more about
+        links visit the <a href="#">W3C</a> website.</p>
+        <nav>
+            <ul>
+            <li><a href="#">Canada</a></li>
+            <li><a href="#">Germany</a></li>
+            <li><a href="#">United States</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            Comments as of <time>November 15, 2015</time>
+            <div>
+                <p>By Ricardo on <time>September 15, 2015</time></p>
+                <p>Easy on the HDR buddy.</p>
+            </div>
+            <hr/>
+            <div>
+                <p>By Susan on <time>October 1, 2015</time></p>
+                <p>I love Central Park.</p>
+            </div>
+            <hr/>
+        </div>
+        <footer>
+            <ul>
+            <li><a href="#">Home</a> | </li>
+            <li><a href="#">Browse</a> | </li>
+            </ul>
+        </footer>
+    </body>
+</html>

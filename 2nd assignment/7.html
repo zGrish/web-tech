@@ -1,0 +1,37 @@
+<!--QUESTION 7: HTML Sample Document demonstrating Attribute Selector-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Share Your Travels</title>
+    <style>
+        [title] {
+            cursor: help;
+            padding-bottom: 3px;
+            border-bottom: 2px dotted blue;
+            text-decoration: none;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            display: inline-block;
+            width: 200px; 
+            height: auto; 
+            margin: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="flag.png" title="Canada Flag" />
+        <h2><a href="countries.php?id=CA" title="see posts from Canada">Canada</a></h2>
+        <p>Canada is a North American country consisting of . . . </p>
+    </div>
+    <div class="image-container">
+        <img src="calgary.png" title="At top of Sulphur Mountain" />
+        <img src="church.png" title="Grace Presbyterian Church" />
+        <img src="sulphur.png" title="Calgary Downtown" />
+    </div>
+</body>
+</html>

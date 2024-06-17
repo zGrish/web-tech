@@ -1,0 +1,19 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

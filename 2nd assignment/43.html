@@ -1,0 +1,48 @@
+<!--QUESTION 41: HTML Document demonstrating the use of a CSS framework Bootstrap utilising it's grid system.-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Grid System Example</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                padding: 20px;
+            }
+            .my-content {
+                background-color: #f0f0f0;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 my-content">
+                    <p>Left Column</p>
+                </div>
+                <div class="col-md-7 my-content">
+                    <p>Main Content</p>
+                </div>
+                <div class="col-md-3 my-content">
+                    <p>Right Column</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 my-content">
+                    <p>Another Main Content Area</p>
+                </div>
+                <div class="col-md-4 my-content">
+                    <p>Sidebar</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

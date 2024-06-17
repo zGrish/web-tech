@@ -1,0 +1,43 @@
+<!--QUESTION 26: HTML Document demonstrating Box Sizing via percents-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html,body {
+                margin:0;
+                width:100%;
+                height:100%;
+                background: silver;
+            }
+            .pixels {
+                width:200px;
+                height:50px;
+                background: teal;
+            }
+            .percent {
+                width:50%;
+                height:50%;
+                background: olive;
+            }
+                
+            .parentFixed {
+                width:400px;
+                height:150px;
+                background: beige;
+            }
+            .parentRelative {
+                width:50%;
+                height:50%;
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pixels">
+            Pixels - 200px by 50 px
+        </div>
+        <div class="percent">
+            Percent - 50% of width and height
+        </div>
+    </body>
+</html>
