@@ -5,13 +5,14 @@
     <title>Methods</title>
 </head>
 <body>
+    <div id="output"></div>
     <script>
         var someObject = {
             doSomething: function() {
-                alert("Doing something!");
+                return "Doing something!";
             }
         };
-        someObject.doSomething();
+        document.getElementById("output").innerHTML = someObject.doSomething();
     </script>
 </body>
 </html>

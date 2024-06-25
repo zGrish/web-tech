@@ -5,9 +5,10 @@
     <title>Date</title>
 </head>
 <body>
+    <div id="output"></div>
     <script>
         var d = new Date();
-        alert("Today is " + d.toString());
+        document.getElementById("output").innerHTML = "Today is " + d.toString();
     </script>
 </body>
 </html>

@@ -5,9 +5,10 @@
     <title>Properties</title>
 </head>
 <body>
+    <div id="output"></div>
     <script>
         var someObject = { property: "Some value" };
-        alert(someObject.property);
+        document.getElementById("output").innerHTML = someObject.property;
     </script>
 </body>
 </html>

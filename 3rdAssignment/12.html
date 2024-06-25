@@ -5,16 +5,19 @@
     <title>String</title>
 </head>
 <body>
+    <div id="output"></div>
     <script>
         var greet = new String("Good");
         var greetShort = "Good";
-        alert(greetShort.length); // 4
+        var output = "Length of greetShort: " + greetShort.length + "<br>";
 
         var strLong = greet.concat("Morning");
         var strShort = greetShort + "Morning";
 
-        alert(strLong);
-        alert(strShort); 
+        output += "Long form concatenation: " + strLong + "<br>";
+        output += "Short form concatenation: " + strShort + "<br>";
+
+        document.getElementById("output").innerHTML = output;
     </script>
 </body>
 </html>

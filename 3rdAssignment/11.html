@@ -5,10 +5,13 @@
     <title>Math</title>
 </head>
 <body>
+    <div id="output"></div>
     <script>
-        alert(Math.PI); // 3.141592657
-        alert(Math.sqrt(4)); // 2
-        alert(Math.random()); // random number between 0 and 1
+        var output = "Math.PI: " + Math.PI + "<br>";
+        output += "Math.sqrt(4): " + Math.sqrt(4) + "<br>";
+        output += "Math.random(): " + Math.random() + "<br>";
+        
+        document.getElementById("output").innerHTML = output;
     </script>
 </body>
 </html>
