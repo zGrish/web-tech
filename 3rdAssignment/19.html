@@ -1,0 +1,23 @@
+<!--QUESTION 19: HTML code demonstrating JavaScript
+ Submitting Forms Programmatically:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmatic Form Submission</title>
+</head>
+<body>
+    <form action='login.php' method='post' id='loginForm'>
+        <input type='text' name='username' id='username'/>
+        <input type='password' name='password' id='password'/>
+        <input type='submit'/>
+    </form>
+    <button id="submitBtn">Submit Form</button>
+    <script>
+        document.getElementById("submitBtn").onclick = function() {
+            var formExample = document.getElementById("loginForm");
+            formExample.submit();
+        }
+    </script>
+</body>
+</html>

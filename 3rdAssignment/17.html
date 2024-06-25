@@ -1,0 +1,19 @@
+<!--QUESTION 17: HTML code demonstrating JavaScript
+Mouse Events:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Events</title>
+</head>
+<body>
+    <div id="keyExample" tabindex="0">Press any key here</div>
+    <script>
+        document.getElementById("keyExample").onkeydown = function(e) {
+            var keyPressed = e.keyCode;
+            var character = String.fromCharCode(keyPressed);
+            alert("Key " + character + " was pressed");
+        }
+    </script>
+</body>
+</html>

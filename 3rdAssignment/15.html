@@ -1,0 +1,31 @@
+<!--QUESTION 15: HTML code demonstrating JavaScript
+Listener Approach with External JavaScript:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Listener</title>
+    <script type="text/javascript" src="listener.js"></script>
+</head>
+<body>
+    <div id="example1">Click for pop-up</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var greetingBox = document.getElementById('example1');
+            greetingBox.addEventListener('click', function() {
+                alert('Good Morning');
+            });
+            greetingBox.addEventListener('mouseout', function() {
+                alert('Goodbye');
+            });
+        
+            if (greetingBox.attachEvent) {
+                greetingBox.attachEvent('onclick', function() {
+                    alert('Good Morning');
+                });
+            }
+        });        
+    </script>
+</body>
+</html>

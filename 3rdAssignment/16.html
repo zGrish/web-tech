@@ -1,0 +1,23 @@
+<!--QUESTION 16: HTML code demonstrating JavaScript
+Event Object and Prevent Default:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Object</title>
+</head>
+<body>
+    <form name='mainForm'>
+        <input name="name" type="text">
+        <input name="email" type="text">
+        <input type="submit">
+    </form>
+    <script>
+        document.forms['mainForm'].onsubmit = function(e) {
+            if (e.cancelable) {
+                e.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>

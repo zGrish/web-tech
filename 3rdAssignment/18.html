@@ -1,0 +1,25 @@
+<!--QUESTION 18: HTML code demonstrating JavaScript
+Form Events:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Events</title>
+</head>
+<body>
+    <form action='login.php' method='post' id='loginForm'>
+        <input type='text' name='username' id='username'/>
+        <input type='password' name='password' id='password'/>
+        <input type='submit'/>
+    </form>
+    <script>
+        document.getElementById("loginForm").onsubmit = function(e) {
+            var pass = document.getElementById("password").value;
+            if (pass == "") {
+                alert("enter a password");
+                e.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>
