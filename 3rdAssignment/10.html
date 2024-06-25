@@ -1,0 +1,22 @@
+<!--QUESTION 10: HTML code demonstrating JavaScript Arrays:-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        var greetings = new Array("Good Morning", "Good Afternoon");
+        var greetingsAlt = ["Good Morning", "Good Afternoon"];
+
+        for (var i = 0; i < greetings.length; i++) {
+            alert(greetings[i]);
+        }
+
+        greetings.push("Good Evening");
+        for (var i = 0; i < greetings.length; i++) {
+            alert(greetings[i]);
+        }
+    </script>
+</body>
+</html>
